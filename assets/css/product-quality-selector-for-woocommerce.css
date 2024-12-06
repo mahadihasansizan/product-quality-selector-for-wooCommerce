@@ -1,0 +1,99 @@
+.dot-selector-wrapper {
+    text-align: center; /* Center the entire selector wrapper */
+}
+
+.primary-label {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: center; /* Adjust alignment as needed */
+}
+
+.dot-selector {
+    position: relative;
+    width: 100%;
+    padding: 15px 0;
+    margin: 0px 25px;
+}
+
+/* Horizontal Line */
+.dot-selector::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background-color: #ddd;
+    transform: translateY(-50%);
+    border-radius: 2px;
+}
+
+/* Dots Container */
+.dots {
+    position: relative;
+    width: 100%;
+    height: 0;
+}
+
+/* Individual Dot */
+.dot {
+    position: absolute;
+    top: 50%;
+    width: 20px;
+    height: 20px;
+    background-color: yellow; /* Inactive color */
+    border-radius: 50%;
+    opacity: 1;
+    /* cursor: pointer; */ /* Removed since dots are not clickable */
+    transform: translate(-50%, -50%);
+    transition: opacity 0.3s, transform 0.3s, background-color 0.3s;
+}
+
+/* Active Dot */
+.dot.active {
+    opacity: 1;
+    transform: translate(-50%, -60%);
+    background-color: red; /* Active color */
+}
+
+/* Labels Container */
+.labels {
+    position: relative;
+    top: 30px;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Individual Label */
+.labels span {
+    position: absolute;
+    transform: translateX(-50%);
+    font-size: 14px;
+    color: #666;
+    white-space: nowrap;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 600px) {
+    .dot-selector-wrapper {
+        width: 90%;
+        margin: 0px;
+    }
+
+    .primary-label {
+        font-size: 16px;
+        margin-bottom: 8px;
+    }
+
+    .labels span {
+        font-size: 12px;
+    }
+
+    .dot {
+        width: 16px;
+        height: 16px;
+    }
+}
