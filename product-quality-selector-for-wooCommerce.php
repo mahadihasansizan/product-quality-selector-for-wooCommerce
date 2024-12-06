@@ -1,11 +1,11 @@
 <?php
 /**
  * Plugin Name: Product Quality Selector For WooCommerce
- * Plugin URI: https://yourwebsite.com/plugins/product-quality-selector-for-woocommerce/
+ * Plugin URI: https://github.com/mahadihasansizan/product-quality-selector-for-wooCommerce
  * Description: Displays a dynamic dot selector on WooCommerce single product pages to show product quality. Integrates with Elementor as a widget with customizable colors and font styles.
  * Version: 1.0.0
- * Author: Your Name
- * Author URI: https://yourwebsite.com/
+ * Author: MSdigitalsolution
+ * Author URI: https:https://www.msdigitalsolution.com
  * Text Domain: product-quality-selector-for-woocommerce
  * Domain Path: /languages
  * License: GPLv2 or later
